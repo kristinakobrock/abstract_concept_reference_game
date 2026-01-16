@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy import stats
 
-abstr_df = rt.get_ratings('craft,quantity,emotion,religion,relationship,sport,profession,time,communication,shape')
+abstr_df = rt.get_ratings('craft,quantity,emotion,science,relationship,sport,profession,time,communication,shape')
 concr_df = rt.get_ratings('animal,vehicle,clothing,furniture,food,plant,building,tool,beverage,drink,fruit')
 
 df = pd.concat([abstr_df, concr_df], axis=0)
